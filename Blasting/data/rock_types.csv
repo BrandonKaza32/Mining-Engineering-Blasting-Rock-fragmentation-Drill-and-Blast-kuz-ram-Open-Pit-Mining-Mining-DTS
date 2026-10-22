@@ -1,0 +1,4 @@
+rock_class,site,mine,country,rock_type,n_blasts,E_GPa,XB_median_m,S_B_median,H_B_median,B_D_median,T_B_median,Pf_median,Pf_min,Pf_max,X50_median_m,bench_height_m
+Soft,Akdaglar,Akdaglar Quarry,Turkey (Istanbul),Sandstone (aggregate),25,16.9,1.19,1.14,3.75,22.47,1.25,0.76,0.49,1.26,0.17,8.6
+Medium,Mrica,Mrica Quarry,Indonesia,Andesite,12,32.0,1.35,1.2,6.0,32.89,0.72,0.45,0.3,0.56,0.17,20.1
+Hard,Murgul,Murgul Copper Mine,Turkey,Dacite / altered dacite (copper),9,50.0,1.02,1.0,2.4,30.3,0.8,0.61,0.55,0.75,0.3,7.4
