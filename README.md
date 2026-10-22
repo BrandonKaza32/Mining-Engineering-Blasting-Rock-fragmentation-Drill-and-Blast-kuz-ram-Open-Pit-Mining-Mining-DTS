@@ -1,5 +1,9 @@
 # Blast fragmentation and cost
 
+[![Open the live app](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://3r5wued8gbbmrrt9qydety.streamlit.app/)
+
+**▶ Live app:** [Blast design explorer](https://3r5wued8gbbmrrt9qydety.streamlit.app/): pick a rock type, change the design, and see fragment size, boulders and cost.
+
 **Which blast design breaks rock to the right size for the lowest cost, for soft, medium and hard rock?**
 
 Using 110 real blasts from 10 mines, I used machine learning to find what drives fragment size. Then I used the Kuz-Ram model, calibrated to each site, to find the cheapest design that meets the size and boulder limits.
@@ -104,6 +108,10 @@ Full table: [`results/recommended_designs.csv`](results/recommended_designs.csv)
 ```
 
 ## Run it
+
+Or use the hosted version: [Blast design explorer](https://3r5wued8gbbmrrt9qydety.streamlit.app/).
+
+To run it on your own computer:
 
 ```bash
 pip install -r requirements.txt
