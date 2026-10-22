@@ -1,4 +1,0 @@
-# for the Streamlit app (streamlit run app/streamlit_app.py)
-streamlit>=1.40
-pandas>=2.0
-numpy>=1.26
