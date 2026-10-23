@@ -19,7 +19,7 @@ Using 110 real blasts from 10 mines, I used machine learning to find what drives
 
 ## The key finding: why ML doesn't set the design
 
-Across all blasts, more explosive goes with smaller rock. **Inside each mine, though, the sign flips at half the sites.** Blasters load more explosive where the rock is hard to break, so powder factor partly marks *difficult* blasts. A model trained on this data can't be trusted to say what happens when we change the powder factor.
+Across all blasts, more explosive goes with smaller rock. **Inside each mine, though, the sign flips at half the sites.** Powder factor never changes on its own: at Akdaglar, the blasts with more explosive also had a much tighter burden, longer stemming and blockier rock, so their effects are mixed together. Across mines, powder factor follows each mine's purpose rather than rock hardness (Akdaglar is soft but, as an aggregate quarry, uses the most explosive). A model trained on this data can't be trusted to say what happens when we change the powder factor.
 
 ![Confounding](images/01_confounding.png)
 
@@ -88,6 +88,8 @@ Full table: [`results/recommended_designs.csv`](results/recommended_designs.csv)
 **Drilling price matters about 3× more than explosive price.** Full table: [`results/sensitivity.csv`](results/sensitivity.csv)
 
 ## Limitations
+- **The savings are Kuz-Ram estimates, not something this data proves.** Inside a mine, the data shows almost no link between powder factor and X50. At Akdaglar, powder factor ranged from 0.49 to 1.26, yet X50 stayed around 17 cm. Trial blasts are needed before acting on the recommended designs.
+- At a new mine the models fail (R² ≈ 0.15 at best), which matches published work on this database. With 3 calibration blasts from the new mine, R² rises to about 0.61.
 - Each rock class rests on one site, so A mixes rock properties with site practice and measurement method.
 - Hole size (102 mm ANFO) and unit prices are typical assumptions, not the mines' real numbers.
 - Kuz-Ram's own error is about 3–5 cm at each site.
